@@ -1,0 +1,92 @@
+cider optim 50
+
+
+setting up scorers...
+computing Bleu score...
+{'testlen': 47993, 'reflen': 47580, 'guess': [47993, 42993, 37993, 32993], 'correct': [38744, 21745, 10914, 5144]}
+ratio:1.008680
+Bleu_1: 0.807
+Bleu_2: 0.639
+Bleu_3: 0.490
+Bleu_4: 0.368
+computing METEOR score...
+METEOR: 0.283
+computing Rouge score...
+ROUGE_L: 0.579
+computing CIDEr score...
+CIDEr: 1.215
+computing SPICE score...
+Parsing reference captions
+Initiating Stanford parsing pipeline
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.TokenizerAnnotator - TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+[main] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... 
+done [0.8 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ner
+Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [1.7 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [0.8 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [1.1 sec].
+Threads( StanfordCoreNLP ) [02:04.857 minutes]
+Threads( StanfordCoreNLP ) [01:44.724 minutes]
+Threads( StanfordCoreNLP ) [51.994 seconds]
+Parsing test captions
+Threads( StanfordCoreNLP ) [41.538 seconds]
+Warning: Nashorn engine is planned to be removed from a future JDK release
+SPICE evaluation took: 5.788 min
+SPICE: 0.215
+loss:  tensor(8.6889, device='cuda:0')
+{'Bleu_1': 0.8072843956410142, 'Bleu_2': 0.638990070552567, 'Bleu_3': 0.48950394212810455, 'Bleu_4': 0.36773666527589255, 'METEOR': 0.28250825898084286, 'ROUGE_L': 0.578765679448451, 'CIDEr': 1.2152121628086392, 'SPICE': 0.2149615181847662}
+Terminating BlobFetcher
+
+
+
+
+cross entropy 16
+
+setting up scorers...
+computing Bleu score...
+{'testlen': 46592, 'reflen': 46539, 'guess': [46592, 41592, 36592, 31592], 'correct': [35672, 19914, 10329, 5307]}
+ratio:1.001139
+Bleu_1: 0.766
+Bleu_2: 0.605
+Bleu_3: 0.469
+Bleu_4: 0.363
+computing METEOR score...
+METEOR: 0.278
+computing Rouge score...
+ROUGE_L: 0.567
+computing CIDEr score...
+CIDEr: 1.139
+computing SPICE score...
+Parsing reference captions
+Initiating Stanford parsing pipeline
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.TokenizerAnnotator - TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+[main] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... 
+done [0.7 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ner
+Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [1.7 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [0.9 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [0.8 sec].
+Threads( StanfordCoreNLP ) [02:08.503 minutes]
+Threads( StanfordCoreNLP ) [01:47.510 minutes]
+Threads( StanfordCoreNLP ) [51.928 seconds]
+Parsing test captions
+Threads( StanfordCoreNLP ) [38.839 seconds]
+Warning: Nashorn engine is planned to be removed from a future JDK release
+SPICE evaluation took: 5.799 min
+SPICE: 0.208
+loss:  tensor(1.7048, device='cuda:0')
+{'Bleu_1': 0.7656249999999836, 'Bleu_2': 0.605455741872517, 'Bleu_3': 0.4694748280224241, 'Bleu_4': 0.36310081638480884, 'METEOR': 0.2780154577267022, 'ROUGE_L': 0.5666168574598396, 'CIDEr': 1.1389098760805403, 'SPICE': 0.20827608485119786}
+Terminating BlobFetcher
+
+
+
+
+
